@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "image": "https://im.indiatimes.in/content/2020/Mar/iPhone-9-and-9-plus_5e71d66e079f2.jpg?w=1200&h=900&cc=1",
+      "name": "iPhone 9",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "rating": 4.6,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "Smartphones"
+    },
+
+    { 
+        "id": 2, 
+    "image":"https://m.media-amazon.com/images/I/61HHbO9NDFL.jpg",
+    "name": "iPhone X",
+     "price": 899,
+      "discountPercentage":17.94,
+      "rating":4.44,
+      "stock":34,
+     " brand":"Apple",
+     " category":"Smartphones"
+     },
+    { 
+        "id": 3, 
+    "image":"https://admin.hyperce.io/assets/thumbnail__12__preview.jpg?w=800",
+    "name": "Samsung Universe 9",
+     "price": 1249,
+     " discountPercentage":15.46,
+      "rating":4.09,
+      "stock":36,
+      "brand":"Samsung",
+      "category":"Smartphones"
+       },
+    { 
+        "id": 4,
+        "image":"https://opsg-img-cdn-gl.heytapimg.com/epb/202310/25/Hp5VGnoojOW2ulc3.png",
+        "name": "OPPOF19",
+         "price": 280,
+          "discountPercentage":17.91,
+          "rating":4.3,
+          "stock":123,
+          "brand":"OPPO",
+          "category":"Smartphones"
+        },
+    { 
+        "id": 5,
+         "image":"https://5.imimg.com/data5/ZR/TV/HW/SELLER-57126529/huawei-p30-pro-6-gb-ram-plus-128-gb-rom-pearl-white-mobile-500x500.jpg",
+         "name": "Huawei P30",
+          "price": 499, 
+          "discountPercentage":10.58,
+          "rating":4.09,
+          "stock":32,
+          "brand":"Huawei",
+          "category":"Smartphones"
+         }
+   
+  ]
+  

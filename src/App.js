@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchProducts } from './features/products/productsAPI';
+import { setProducts } from './features/products/productsSlice';
+import ProductCard from './components/ProductCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.products);
+  const cart = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    fetchProducts().then(data => {
+      dispatch(setProducts(data));
+    });
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+      <div className="row">
+        <div className="col">
+          <h4>Total Quantity: {cart.totalQuantity}</h4>
+          <h4>Total Amount: ${cart.totalAmount.toFixed(2)}</h4>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
